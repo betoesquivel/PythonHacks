@@ -5,6 +5,9 @@ import time
 num = ''
 password = ''
 
+num = raw_input('Num: ')
+password = raw_input('Password: ')
+
 #form name = frmLogin
 #user name = j_username
 #pass name = j_password
@@ -56,8 +59,8 @@ res = b.open(plan_url)
 print res.get_data()
 
 # Ver los puntos mitelcel que tengo
-# res = b.open(puntos_url)
-# print res.get_data()
+res = b.open(puntos_url)
+print res.get_data()
 
 # Ver los datos que he consumido
 # res = b.open(data_url)
